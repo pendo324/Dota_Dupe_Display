@@ -16,15 +16,17 @@ namespace Dota_Dupes_GUI
 {
     public partial class Form1 : Form
     {
+
         string steamKey = "26AF57E923E0D8E5E63C006BA68D78FE";
         string steamID = "";
         public Form1()
         {
+
             Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\DDD_Resources\");
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             InitializeComponent();
-            AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
+            this.FormClosing += new FormClosingEventHandler(myForm_FormClosing);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -85,7 +87,7 @@ namespace Dota_Dupes_GUI
 
         private void Completed()
         {
-            string path = Directory.GetCurrentDirectory() + @"\DDD_Resources";
+            string path = Directory.GetCurrentDirectory() + @"\DDD_Resources\";
 
             var query = from f in Directory.GetFiles(path, "*.*")
                         select new { Path = f, FileName = Path.GetFileName(f) };
@@ -149,9 +151,9 @@ namespace Dota_Dupes_GUI
 
         }
 
-        static void OnProcessExit(object sender, EventArgs e)
+        void myForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Directory.Delete(Directory.GetCurrentDirectory() + @"\DDD_Resources\");
+            Directory.Delete(Directory.GetCurrentDirectory() + @"\DDD_Resources\", true);
         }
     }
 }
