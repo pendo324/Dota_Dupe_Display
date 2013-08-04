@@ -1,0 +1,10 @@
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Debug\Dota Dupes GUI.exe.config
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Debug\Dota Dupes GUI.exe
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Debug\Dota Dupes GUI.pdb
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Debug\Dota_Dupes_GUI.Form1.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Debug\Dota_Dupes_GUI.Properties.Resources.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Debug\Dota Dupes GUI.csproj.GenerateResource.Cache
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Debug\Dota Dupes GUI.exe
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Debug\Dota Dupes GUI.pdb
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Debug\Dota Dupes GUI.exe.CodeAnalysisLog.xml
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Debug\Dota Dupes GUI.exe.lastcodeanalysissucceeded

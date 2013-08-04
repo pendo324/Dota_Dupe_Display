@@ -1,0 +1,9 @@
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Release\Dota Dupes GUI.exe.config
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Release\Dota Dupes GUI.exe
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\bin\Release\Dota Dupes GUI.pdb
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota_Dupes_GUI.Form1.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota_Dupes_GUI.Properties.Resources.resources
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota Dupes GUI.csproj.GenerateResource.Cache
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota Dupes GUI.exe
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota Dupes GUI.pdb
+C:\Users\Justin\Documents\Visual Studio 2012\Projects\Dota Dupes GUI\Dota Dupes GUI\obj\Release\Dota Dupes GUI.csprojResolveAssemblyReference.cache
