@@ -1,5 +1,5 @@
-Dota_Dupe_Display
-=================
+Dota Dupe Display (DDD) alpha 0.0.1
+===================================
 
 Displays all dupes in your Dota 2 inventory to facilitate easy trades without opening the Dota 2 client.
 
