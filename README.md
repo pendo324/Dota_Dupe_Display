@@ -5,3 +5,6 @@ Displays all dupes in your Dota 2 inventory to facilitate easy trades without op
 
 
 By no means a finished project, but it does what is advertised. Email me with any suggestions.
+
+
+Requires .NET 4.5
