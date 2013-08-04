@@ -17,16 +17,14 @@ namespace Dota_Dupes_GUI
     public partial class Form1 : Form
     {
         string steamKey = "26AF57E923E0D8E5E63C006BA68D78FE";
-        string steamID = "76561198022346122";
+        string steamID = "";
         public Form1()
         {
-            Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\Resourses\");
+            Directory.CreateDirectory(Directory.GetCurrentDirectory() + @"\DDD_Resources\");
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             InitializeComponent();
-            //textBox1.Text = "76561198022346122";
-            //textBox2.Text = "26AF57E923E0D8E5E63C006BA68D78FE";
-            //pictureBox1.Load("http://media.steampowered.com/apps/570/icons/econ/testitem_slot_empty.57f48103eed57e2cfa3d041f979f96a6869c1d22.png");
+            AppDomain.CurrentDomain.ProcessExit += new EventHandler(OnProcessExit);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,16 +35,6 @@ namespace Dota_Dupes_GUI
         private void textBox1_TextChanged(object sender, EventArgs e)
         {            
             steamID = textBox1.Text;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -72,18 +60,6 @@ namespace Dota_Dupes_GUI
                 }
             }
 
-            #region Console Stuff
-            foreach (var defindex in dupes)
-            {
-                foreach (var item in store)
-                {
-                    if (item["defindex"] == defindex && item["item_class"] != "supply_crate")
-                    {
-                        Console.WriteLine(item["name"]);
-                    }
-                }
-            } 
-            #endregion
             imageList1.ImageSize = new Size(256, 170);
             List<Image> images = new List<Image>();
             List<String> imageURL = new List<String>();
@@ -100,7 +76,7 @@ namespace Dota_Dupes_GUI
                         //client.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
 
                         // Start the download and copy the file to c:\temp
-                        client.DownloadFileAsync(new Uri(url), Directory.GetCurrentDirectory() + @"\Resourses\" + item["name"]);
+                        client.DownloadFileAsync(new Uri(url), Directory.GetCurrentDirectory() + @"\DDD_Resources\" + item["name"]);
                     }
                 }
             }
@@ -109,7 +85,7 @@ namespace Dota_Dupes_GUI
 
         private void Completed()
         {
-            string path = Directory.GetCurrentDirectory() + @"\Resourses";
+            string path = Directory.GetCurrentDirectory() + @"\DDD_Resources";
 
             var query = from f in Directory.GetFiles(path, "*.*")
                         select new { Path = f, FileName = Path.GetFileName(f) };
@@ -121,7 +97,7 @@ namespace Dota_Dupes_GUI
             dataRepeater1.DataSource = files;
         }
 
-        #region Useless
+        #region Also useless
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -161,12 +137,21 @@ namespace Dota_Dupes_GUI
         {
 
         } 
-        #endregion
-
+        
         private void label2_Click_1(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        static void OnProcessExit(object sender, EventArgs e)
+        {
+            Directory.Delete(Directory.GetCurrentDirectory() + @"\DDD_Resources\");
+        }
     }
 }
